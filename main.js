@@ -43,6 +43,8 @@ function tienCap() {
         tienCap = tienCapnhadan(soKenhcc);
     } else if (loaiKh === "doanhnghiep") {
         tienCap = tienCapdoanhnghiep(soKenhcc, soKetnoi);
+    } else {
+        alert("vui lòng chọn loại khách hàng");
     }
     tienCap = Intl.NumberFormat("en-US").format(tienCap);
     document.getElementById("infoTiencap").innerHTML = "Mã khách hàng: " + maKh + "; Tiền cáp: $" + tienCap;
